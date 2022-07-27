@@ -10,12 +10,6 @@ main{
 }
 
 #yellow{
-    /* display: grid; */
-    
-    /* place-items: center; */
-    /* grid-template-columns: repeat(2, 1fr);
-    
-    border: 2px red solid; */
     grid-column: 1/2;
     grid-row: 2/4;
 }
@@ -25,9 +19,6 @@ ul {
     display: grid;
    grid-template-columns: repeat(2, 1fr);
 }
-
-
-
 
 
 #orange {
