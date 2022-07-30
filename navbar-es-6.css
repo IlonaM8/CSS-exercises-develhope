@@ -4,9 +4,10 @@ body {
     font-family: 'Lato', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: black;
+    background-color: rgb(23, 23, 23);
     box-sizing: border-box;
     color: #fff;
+    
 }
 
 
@@ -19,7 +20,7 @@ body {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: baseline;
-    /* width: 80vw; */
+    width: 100%;
     align-content: center;
    
    
@@ -27,11 +28,12 @@ body {
 }
 
 .navbar-content {
+    width: 100%;
     display: flex;
     gap: 8rem;
     align-items: baseline;
     justify-content: space-evenly;
-    background-color: rgb(35, 51, 54);
+    background-color: rgb(36, 104, 127);
     border-bottom: 1px solid #fff;
    
     
@@ -85,7 +87,7 @@ input[type=text]{
 /* drop down menu */
 select {
     -webkit-appearance: none;
-    background-color: rgb(35, 51, 54);
+    background-color: rgb(36, 104, 127);
     color: rgb(161, 159, 159);
     border-radius: 8px;
     font-size: 15px; 
@@ -119,22 +121,29 @@ form button {
     -webkit-appearance: none;
     padding: 8px 12px;
     border: none;
-    background-color: rgb(37, 35, 35);
-    color: rgb(8, 128, 8);
-    border: solid 1px  rgb(8, 128, 8);
+    background-color: rgb(68, 66, 66);
+    color: rgb(35, 168, 8);
+    border: solid 1px  rgb(6, 159, 62);
     border-radius: 4px;
     font-size: 12px;
     margin: 2px;
 }
 
+form button:hover {
+    background-color: rgb(21, 94, 6);
+    color: rgb(238, 241, 242);
+
+
+}
+
+
 
 button:disabled, 
 button[disabled] {
     all: unset;
-    background-color: rgb(35, 51, 54);
+    background-color: rgb(36, 104, 127);
     color: #666666;
     
-
 }
 /* .disabled {
     background-color: rgb(35, 51, 54);
@@ -148,3 +157,45 @@ button[disabled] {
     width: 100%;
     height: 1px;
 } */
+
+.nav-mobile{
+    display: none;
+}
+
+.mobile-bars {
+    display: none;
+    
+}
+
+
+
+@media screen and (max-width: 768px){
+    .navbar-content {
+        background-color: rgb(36, 104, 127);
+       padding-bottom: 10px;
+       
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .nav-mobile{
+        display: block;
+       font-size: 12px;
+       padding-top: 10px;
+       margin: 2px;
+    }
+
+    input, button{
+        display: none;
+    }
+
+    .mobile-bars {
+        display: block;
+        color: white;
+    }
+
+    
+
+}
